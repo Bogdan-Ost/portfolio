@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Frontend Developer</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      header {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        color: #007bff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        font-size: 1.2em;
+        color: #666;
+        margin-top: 5px;
+      }
+      .contact-info {
+        margin-top: 15px;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      h2 {
+        border-left: 5px solid #007bff;
+        padding-left: 15px;
+        margin-top: 40px;
+        color: #222;
+        text-transform: uppercase;
+        font-size: 1.3em;
+      }
+
+      .project {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+      }
+      .project-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #0056b3;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .tech-stack {
+        font-size: 0.85em;
+        font-weight: bold;
+        background: #e2e6ea;
+        padding: 3px 10px;
+        border-radius: 4px;
+        color: #495057;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .project-desc {
+        margin: 10px 0;
+        font-size: 0.95em;
+      }
+      .links {
+        margin-top: 15px;
+      }
+      .links a {
+        margin-right: 15px;
+        color: white;
+        background: #007bff;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.85em;
+        transition: 0.3s;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+      }
+      .skills-list li {
+        background: #343a40;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.85em;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+        .links a {
+          border: 1px solid #007bff;
+          color: #007bff !important;
+          background: transparent !important;
+        }
+        .project {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Твоє Ім’я та Прізвище</h1>
+      <div class="subtitle">Frontend Developer (React / JavaScript)</div>
+      <div class="contact-info">
+        <span>Telegram: <a href="https://t.me">@your_username</a></span>
+        <span>Email: <a href="mailto:your@email.com">your@email.com</a></span>
+        <span>GitHub: <a href="https://github.com">://github.com</a></span>
+      </div>
+    </header>
+
+    <h2>💻 Вибрані проєкти</h2>
+
+    <div class="project">
+      <span class="project-title">Meditators Cats — Landing Page</span>
+      <div class="tech-stack">HTML5, SCSS, JavaScript, Parcel</div>
+      <p class="project-desc">
+        Багатосторінковий адаптивний сайт з сучасною версткою. Реалізовано
+        складні анімації, оптимізовано графіку (SVG/WebP) та забезпечено
+        кросбраузерність.
+      </p>
+      <div class="links">
+        <a href="https://bogdan-ost.github.io">Live Demo</a>
+        <a href="https://github.combogdan-ost/MeditatorsCats_project_10"
+          >GitHub Code</a
+        >
+      </div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Lapky Junior — Пошук тварин</span>
+      <div class="tech-stack">JavaScript (ES6+), REST API, Axios, CSS3</div>
+      <p class="project-desc">
+        Веб-додаток для притулку. Реалізовано складну логіку фільтрації за
+        категоріями, пагінацію та динамічне завантаження даних з сервера.
+      </p>
+      <div class="links">
+        <a href="https://davei2023.github.io">Live Demo</a>
+        <a href="https://github.comdavei2023/lapky-junior.js">GitHub Code</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Phonebook — React SPA</span>
+      <div class="tech-stack">React, Redux Toolkit, JWT Auth, Material UI</div>
+      <p class="project-desc">
+        Додаток для керування контактами. Реалізовано реєстрацію користувачів,
+        безпечну авторизацію та повний цикл операцій з базою даних (CRUD).
+      </p>
+      <div class="links">
+        <a href="https://09-auth-six-omega.vercel.app">Live Demo</a>
+      </div>
+    </div>
+
+    <h2>🎓 Освіта та Навички</h2>
+    <p>
+      <strong>GOIT Academy</strong> (Fullstack Developer) — 10 місяців
+      інтенсивної практики.
+    </p>
+    <ul class="skills-list">
+      <li>HTML5 / CSS3 (SASS/BEM)</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React / Redux Toolkit</li>
+      <li>REST API / Axios</li>
+      <li>Git / GitHub</li>
+      <li>Node.js (Basic)</li>
+    </ul>
+  </body>
+</html>
